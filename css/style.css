@@ -1,0 +1,39 @@
+*{margin: 0;padding: 0;}
+*, *:before, *:after { box-sizing: border-box;}
+html, body, .page{ width: 100%;height: 100%;}
+.wrap { position: relative;height:100%;width:100%;overflow: hidden;}
+.sec {position:absolute;left:0;top:0;width:100%;height:100%;-webkit-backface-visibility: hidden;}
+.sec section {overflow: hidden;position:absolute;width: 100%;height:100%;left:0;top:0;-webkit-backface-visibility: hidden;}
+.page{background-size: cover;background-position: center;background-repeat: no-repeat;background-image:url("../img/bg.png");}
+.page-container {-webkit-transform-origin:0 0;width: 320px;height:504px;position: absolute;}
+.zIndex{z-index: 10;}
+.hide{display: none;}
+
+.ty{position: absolute;width: 100%;height: 100%;left:0;top:0;}
+.unify{position: absolute;width: 100%;height: 100%;left:-100%;top:100%;}
+.red{-webkit-animation: myleft .75s ease forwards;}
+.goldL{-webkit-animation: myleft .75s .3s ease forwards;}
+.goldR{left:100%;top:-100%;-webkit-animation: myright .75s .75s ease forwards;}
+.goldB{-webkit-animation: myleft .75s .75s ease forwards;}
+.logo{position: absolute;width: 213px;height: 218px;left:54px;top:20px;opacity: 0;-webkit-animation: mylogo 1.5s 1s ease-in forwards;}
+.btn{position: absolute;width: 232px;height:78px;left:44px;top:258px;opacity: 0;-webkit-animation: mylogo 1s 1.2s ease-in forwards; }
+.rule{z-index:999;position: absolute;width: 65px;height: 26px;left:25px;top:20px;}
+.prize{z-index:999;position: absolute;width: 65px;height: 26px;right:25px;top:20px;}
+.smallBg{position: absolute;width: 210px;height: 270px;left: 55px;top:100px;background-color: rgba(255,255,255,0.2)}
+.r1{opacity: 0;-webkit-animation: mylogo 1s 1.5s ease-in forwards;}
+.p1{opacity: 0;-webkit-animation: mylogo 1s 1.5s ease-in forwards;}
+.againBtn1{position: absolute;width:148px;height: 40px;left:86px;top:338px;}
+.againBtn2{position: absolute;width:148px;height: 40px;left:86px;top:300px;}
+
+@-webkit-keyframes myleft {
+    0%{left:-100%;top:100%;}
+    100%{left:0;top:0;}
+}
+@-webkit-keyframes myright {
+    0%{left:100%;top:-100%;}
+    100%{left:0;top:0;}
+}
+@-webkit-keyframes mylogo {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
